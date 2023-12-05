@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Dubtronic Inline;
+  src: url("../fonts/Dubtronic-Inline.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Dubtronic Solid;
+  src: url("../fonts/Dubtronic-Solid.woff2") format("woff2");
+}
