@@ -3,11 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Dubtronic Inline;
+  font-family: DubtronicInline;
   src: url("../fonts/Dubtronic-Inline.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: Dubtronic Solid;
+  font-family: DubtronicSolid;
   src: url("../fonts/Dubtronic-Solid.woff2") format("woff2");
+}
+
+html {
+  @apply h-full
+}
+
+h1,h2,h3,h4,h5,h6,header,main,footer,div,span {
+  @apply box-border
+}
+
+a {
+  @apply transition duration-200 ease-in 
 }

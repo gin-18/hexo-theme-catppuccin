@@ -1,15 +1,6 @@
-<header>
+<header class="flex justify-between items-center p-6 text-text">
   <!-- logo -->
-  <h1>
-    <a href="<%- url_for() %>">
-      <%= config.author %>
-    </a>
-  </h1>
-  <!-- 导航栏 -->
-  <nav>
-    <ul>
-      <li>post</li>
-      <li>about</li>
-    </ul>
-  </nav>
+  <%- partial('./header/logo') %>
+    <!-- 导航栏 -->
+    <%- partial('./header/navbar') %>
 </header>

@@ -1,4 +1,7 @@
-menu:
-  Home: /
-
 favicon: /favicon.ico
+
+navbar:
+  menu:
+    - { key: "Posts", link: "/posts/" }
+    - { key: "Tags", link: "/tags/" }
+    - { key: "Categories", link: "/catigories/" }

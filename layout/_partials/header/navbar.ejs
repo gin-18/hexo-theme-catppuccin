@@ -1,0 +1,11 @@
+<nav class="text-overlay1">
+  <ul class="flex gap-x-6">
+    <% for(let item of theme.navbar.menu) { %>
+      <li>
+        <a class="hover:text-text" href="<%- url_for(item.link) %>">
+          <%= item.key %>
+        </a>
+      </li>
+      <% } %>
+  </ul>
+</nav>

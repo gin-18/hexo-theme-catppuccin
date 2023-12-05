@@ -3,14 +3,16 @@
 
 <%- partial('_partials/head') %>
 
-  <body class="latte">
+  <body class="latte flex flex-col h-full text-text bg-base">
     <!-- 头部 -->
     <%- partial('_partials/header') %>
 
-      <main>
+      <main class="grow flex justify-center items-center">
         <%- body %>
       </main>
 
+      <!-- 底部 -->
+      <%- partial('_partials/footer') %>
   </body>
 
 </html>
