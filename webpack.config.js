@@ -5,7 +5,7 @@ module.exports = {
   watch: true,
   mode: 'development',
   entry: {
-    index: path.resolve(__dirname, 'src', 'js', 'index.js')
+    main: path.resolve(__dirname, 'src', 'js', 'main.js')
   },
   output: {
     clean: true,
@@ -37,6 +37,13 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'fonts/[hash][ext][query]'
+        }
+      },
+      {
+        test: /\.(png|svg|jpg|gif|webp)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext][query]'
         }
       }
     ]
