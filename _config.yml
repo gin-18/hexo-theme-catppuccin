@@ -10,3 +10,9 @@ navbar:
 author:
   enable: true
   avatar: /images/avatar.jpg
+
+footer:
+  copyright:
+    # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
+    license: 'BY-NC-SA'
+  start_year: 2023
