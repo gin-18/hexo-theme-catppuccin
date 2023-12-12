@@ -1,13 +1,16 @@
-<article class="post">
-  <div class="post-title">
-    <h2 class="title">
+<article class="markdown">
+  <div>
+    <h1>
       <%= page.title %>
-    </h2>
+    </h1>
   </div>
-  <div class="post-meta">
-    <span class="post-time"><%- date(page.date, "YYYY-MM-DD" ) %></span>
+  <div class="my-2 text-overlay1 text-sm">
+    <span><%- date(page.date, "MM DD, YYYY" ) %></span>
+    <span>
+      <%= page.tag %>
+    </span>
   </div>
-  <div class="post-content">
+  <div>
     <%- page.content %>
   </div>
 </article>
