@@ -1,4 +1,7 @@
-favicon: /favicon.ico
+favicon: /images/favicon.ico
+
+logo:
+  colorful: true
 
 navbar:
   menu:

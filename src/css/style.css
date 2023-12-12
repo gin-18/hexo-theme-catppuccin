@@ -23,3 +23,11 @@ h1,h2,h3,h4,h5,h6,header,main,footer,div,span {
 a {
   @apply transition duration-200 ease-in 
 }
+
+.rainbow-slashes {
+  background-image: linear-gradient(135deg, #dc8a78, #e64553, #ea76cb, #40a02b, #007fff, #04a5e5, #7287fd);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
