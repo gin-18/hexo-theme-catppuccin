@@ -6,11 +6,11 @@
   </div>
   <div class="my-2 text-overlay1 text-sm">
     <span><%- date(page.date, "MM DD, YYYY" ) %></span>
-    <span>
-      <%= page.tag %>
-    </span>
   </div>
   <div>
     <%- page.content %>
   </div>
 </article>
+
+<!-- 脚本 -->
+<%- js('/js/main.js') %>
