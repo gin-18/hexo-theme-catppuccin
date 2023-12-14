@@ -5,7 +5,13 @@ logo:
 
 navbar:
   menu:
-    - { key: "Posts", link: "/archives/" }
+    - { key: "Posts", link: "/archives/", icon: "project-roadmap-16"}
+
+# Options: 
+# palette: frappe, macchiato, mocha
+dark_mode:
+  enable: false
+  palette: mocha
 
 author:
   enable: true

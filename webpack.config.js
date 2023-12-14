@@ -5,7 +5,9 @@ module.exports = {
   watch: true,
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, 'src', 'js', 'main.js')
+    static: path.resolve(__dirname, 'src', 'js', 'static.js'),
+    mode: path.resolve(__dirname, 'src', 'js', 'mode.js'),
+    article: path.resolve(__dirname, 'src', 'js', 'article.js')
   },
   output: {
     clean: true,
