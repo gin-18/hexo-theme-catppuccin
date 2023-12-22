@@ -16,7 +16,7 @@ html {
   @apply h-full
 }
 
-h1,h2,h3,h4,h5,h6,header,main,footer,div,span, hr {
+h1,h2,h3,h4,h5,h6,header,main,footer,div,span,hr,ul,li {
   @apply box-border
 }
 
@@ -25,7 +25,7 @@ a {
 }
 
 .rainbow-slashes {
-  background-image: linear-gradient(135deg, rgb(var(--ctp-red)), rgb(var(--ctp-peach)),rgb(var(--ctp-yellow)),rgb(var(--ctp-green)),rgb(var(--ctp-teal)),rgb(var(--ctp-sky)),rgb(var(--ctp-lavender)));
+  background-image: linear-gradient(135deg, rgb(var(--ctp-red)), rgb(var(--ctp-lavender)));
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;

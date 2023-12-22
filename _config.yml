@@ -5,12 +5,12 @@ logo:
 
 navbar:
   menu:
-    - { key: "Posts", link: "/archives/", icon: "project-roadmap-16"}
+    - { key: "Posts", enable: true, link: "/archives/", icon: "notes", showKey: true}
+    - { key: "Github", enable: true, link: "https://github.com/GIN-18", icon: "github", showKey: false}
 
 # Options: 
 # palette: frappe, macchiato, mocha
 dark_mode:
-  enable: false
   palette: mocha
 
 author:

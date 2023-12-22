@@ -16,6 +16,10 @@
   @apply mt-1;
 }
 
+.markdown li > ul, ol {
+  @apply mt-1;
+}
+
 .markdown li > p + p {
   @apply mt-6;
 }
@@ -77,11 +81,11 @@
 }
 
 .markdown ul {
-  @apply text-text pl-8 list-disc;
+  @apply text-text pl-4 list-disc;
 }
 
 .markdown ol {
-  @apply text-text pl-8 list-decimal;
+  @apply text-text pl-4 list-decimal;
 }
 
 .markdown kbd {

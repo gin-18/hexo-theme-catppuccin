@@ -10,6 +10,10 @@ module.exports = {
     "frappe",
     "macchiato",
     "mocha",
+    "icon-\[charm--github\]",
+    "icon-\[charm--sun\]",
+    "icon-\[charm--moon\]",
+    "icon-\[charm--notes\]",
   ],
   theme: {
     extend: {},

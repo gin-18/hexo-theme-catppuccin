@@ -1,19 +1,17 @@
-<nav class="flex text-xs text-overlay1">
-  <ul class="flex gap-x-6">
-    <% for(let item of theme.navbar.menu) { %>
-      <li>
-        <a class="flex justify-center items-center hover:text-text" href="<%- url_for(item.link) %>">
-          <% if(item.icon) { %>
-            <span class="text-lg icon-[octicon--<%= item.icon %>]"></span>
-            <% } else { %>
-              <span>
-                <%= item.key %>
-              </span>
-              <% } %>
-        </a>
-      </li>
+<nav class="flex items-center gap-x-6 text-overlay1">
+  <% for(let item of theme.navbar.menu) { %>
+    <% if(item.enable) { %>
+      <a class="flex justify-center items-center hover:text-text" href="<%- url_for(item.link) %>"
+        title="<%= item.key %>">
+        <span class="text-lg icon-[charm--<%= item.icon %>] md:<%= item.showKey? 'hidden' : '' %>"></span>
+        <% if(item.showKey) { %>
+          <span class="hidden md:inline-block">
+            <%= item.key %>
+          </span>
+          <% } %>
+      </a>
       <% } %>
-  </ul>
+        <% } %>
 
-  <%- partial('mode.ejs') %>
+          <%- partial('mode.ejs') %>
 </nav>

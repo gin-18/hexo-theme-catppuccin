@@ -3,20 +3,18 @@
 
 <%- partial('_partials/head') %>
 
-  <% const palette=theme.dark_mode.enable? theme.dark_mode.palette : '' %>
+  <body class="flex flex-col h-full text-text bg-base">
+    <!-- 头部 -->
+    <%- partial('_partials/header') %>
 
-    <body class="<%= palette %> flex flex-col h-full text-text bg-base">
-      <!-- 头部 -->
-      <%- partial('_partials/header') %>
+      <main class="grow px-6">
+        <%- body %>
+      </main>
 
-        <main class="grow px-6">
-          <%- body %>
-        </main>
+      <!-- 底部 -->
+      <%- partial('_partials/footer') %>
 
-        <!-- 底部 -->
-        <%- partial('_partials/footer') %>
-
-          <%- js('js/mode.js') %>
-    </body>
+        <%- js('js/mode.js') %>
+  </body>
 
 </html>

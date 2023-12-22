@@ -1,21 +1,24 @@
 {
-  "name": "mytheme",
+  "name": "hexo-theme-catppuccin",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "catppuccin theme for hexo",
   "scripts": {
     "dev": "webpack",
     "build": "webpack --mode production"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "hexo",
+    "catppuccin",
+    "blog"
+  ],
+  "author": "GIN-18",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
     "@catppuccin/highlightjs": "^0.1.4",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@iconify-json/octicon": "^1.1.52",
+    "@iconify-json/charm": "^1.1.12",
     "@iconify/tailwind": "^0.1.4",
     "autoprefixer": "^10.4.16",
     "babel-loader": "^9.1.3",
