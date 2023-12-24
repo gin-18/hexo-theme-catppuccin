@@ -3,7 +3,7 @@
     <% if(item.enable) { %>
       <a class="flex justify-center items-center hover:text-text" href="<%- url_for(item.link) %>"
         title="<%= item.key %>">
-        <span class="text-lg icon-[charm--<%= item.icon %>] md:<%= item.showKey? 'hidden' : '' %>"></span>
+        <span class="text-lg icon-[charm--<%= item.icon %>] md:<%- item.showKey? 'hidden' : 'inline-block' %>"></span>
         <% if(item.showKey) { %>
           <span class="hidden md:inline-block">
             <%= item.key %>

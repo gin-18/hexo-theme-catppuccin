@@ -3,6 +3,7 @@ favicon: /images/favicon.ico
 logo:
   colorful: true
 
+# showKey：true 或者 false 是指宽屏是否显示文字
 navbar:
   menu:
     - { key: "Posts", enable: true, link: "/archives/", icon: "notes", showKey: true}

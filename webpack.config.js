@@ -5,9 +5,8 @@ module.exports = {
   watch: true,
   mode: 'development',
   entry: {
-    static: path.resolve(__dirname, 'src', 'js', 'static.js'),
+    common: path.resolve(__dirname, 'src', 'js', 'common.js'),
     mode: path.resolve(__dirname, 'src', 'js', 'mode.js'),
-    article: path.resolve(__dirname, 'src', 'js', 'article.js')
   },
   output: {
     clean: true,

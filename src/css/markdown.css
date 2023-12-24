@@ -112,3 +112,7 @@
 .markdown .highlight pre {
   @apply bg-mantle !important;
 }
+
+.toc ::marker{
+  @apply text-blue
+}

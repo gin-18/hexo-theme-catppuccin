@@ -5,29 +5,31 @@
         <% yearArray=[...new Set(yearArray)] %>
 
           <!-- 年份归档 -->
-          <% for(let year of yearArray) { %>
-            <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %>">
-              <h2 class="mb-2 text-3xl font-['DubtronicInline']">
-                <%= year %>
-              </h2>
-              <ul class="flex flex-col gap-8">
-                <% page.posts.each((post, index)=> { %>
-                  <%if(date(post.date, 'YYYY' )===year) { %>
-                    <% index=0 %>
-                      <li>
-                        <a href="<%- url_for(post.path) %>">
-                          <div class="mb-2 text-lg">
-                            <%= post.title %>
-                          </div>
-                          <div class="text-sm text-overlay1">
-                            <%= date(post.date, 'MM/DD' )%>
-                          </div>
-                        </a>
-                      </li>
-                      <% index++ %>
-                        <% } %>
-                          <% }) %>
-              </ul>
-            </section>
-            <% sectionIndex++ %>
-              <% } %>
+          <div class="md:w-3/5">
+            <% for(let year of yearArray) { %>
+              <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %>">
+                <h2 class="mb-2 text-3xl font-['DubtronicInline']">
+                  <%= year %>
+                </h2>
+                <ul class="flex flex-col gap-8">
+                  <% page.posts.each((post, index)=> { %>
+                    <%if(date(post.date, 'YYYY' )===year) { %>
+                      <% index=0 %>
+                        <li>
+                          <a href="<%- url_for(post.path) %>">
+                            <div class="mb-2 text-lg">
+                              <%= post.title %>
+                            </div>
+                            <div class="text-sm text-overlay1">
+                              <%= date(post.date, 'MM/DD' )%>
+                            </div>
+                          </a>
+                        </li>
+                        <% index++ %>
+                          <% } %>
+                            <% }) %>
+                </ul>
+              </section>
+              <% sectionIndex++ %>
+                <% } %>
+          </div>

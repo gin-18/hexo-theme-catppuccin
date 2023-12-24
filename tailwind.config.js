@@ -14,6 +14,8 @@ module.exports = {
     "icon-\[charm--sun\]",
     "icon-\[charm--moon\]",
     "icon-\[charm--notes\]",
+    "md\:hidden",
+    "md\:inline-block",
   ],
   theme: {
     extend: {},
