@@ -11,6 +11,14 @@ const hljs = require('highlight.js');
 // 高亮文件代码块
 hljs.highlightAll();
 
+// 只有下滑到一定位置才会出现回到顶部的按钮
+$(window).on('scroll', () => {
+  if ($(window).scrollTop() > 800) {
+    $('#toTopBtn').removeClass('hidden').addClass('flex');
+  } else {
+    $('#toTopBtn').removeClass('flex').addClass('hidden');
+  }
+})
 
 // 回到顶部
 $('#toTopBtn').on('click', () => {
