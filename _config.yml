@@ -3,6 +3,9 @@ favicon: /images/favicon.ico
 logo:
   colorful: true
 
+search:
+  enable: true
+
 # showKey：true 或者 false 是指宽屏是否显示文字
 navbar:
   menu:

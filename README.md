@@ -18,3 +18,30 @@ npm run build
 highlight:
   enable: false
 ```
+
+## 搜索文章
+
+在主题目录中的 `_config.yml` 将 `search.enable` 设置为 `true`。
+
+### 安装 hexo-generator-search
+
+在博客目录下安装 `hexo-generator-search` 插件。
+
+```sh
+npm install hexo-generator-search --save
+```
+
+在博客目录中的 `_config.yml` 添加以下内容：
+
+```yaml
+search:
+  path: search.json
+  field: post
+  content: true
+```
+
+执行以下命令在生成 `/public/search.json` 文件：
+
+```sh
+hexo generate
+```

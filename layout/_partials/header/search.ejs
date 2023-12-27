@@ -1,0 +1,20 @@
+<% if(theme.search.enable) { %>
+  <button id="search-btn" class="text-lg transition duration-200 ease-in icon-[charm--search] hover:text-text"></button>
+
+  <div id="search-box" class="hidden flex-col absolute top-0 left-0 w-full h-full p-3 bg-base">
+    <div class="flex justify-center items-center gap-1 w-full">
+      <!-- 输入框 -->
+      <input id="search-input"
+        class="w-full p-2 border border-surface1 rounded bg-base outline-none placeholder:text-surface2" type="text"
+        placeholder="Search">
+
+      <!-- 关闭按钮 -->
+      <button id="search-close" class="flex justify-center items-center p-3 border border-surface2 rounded bg-base">
+        <span class="icon-[charm--cross]"></span>
+      </button>
+    </div>
+
+    <!-- 搜索结果 -->
+    <ul id="search-result" class="flex flex-col gap-2 mt-2"></ul>
+  </div>
+  <% } %>
