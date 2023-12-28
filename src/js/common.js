@@ -86,7 +86,7 @@ function filterContent(data, value) {
     if (!contentMatch) contentMatch = content.split('\n').filter(item => item.length > 0)[0];
 
     return `
-      <li class="border border-surface1 rounded">
+      <li class="border-2 border-surface2 rounded transition duration-200 ease-in hover:border-text">
         <a class="flex flex-col gap-2 p-2" href="${url}">
           <h3 class="font-semibold">${titleMatch}</h3>
           <span class="text-xs">${date}</span>
