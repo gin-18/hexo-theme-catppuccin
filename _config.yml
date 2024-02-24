@@ -12,14 +12,31 @@ navbar:
     - { key: "Posts", enable: true, link: "/archives/", icon: "notes", showKey: true}
     - { key: "Github", enable: true, link: "https://github.com/GIN-18", icon: "github", showKey: false}
 
-# Options: 
+# Options:
 # palette: frappe, macchiato, mocha
 dark_mode:
   palette: mocha
 
-author:
-  enable: true
-  avatar: /images/avatar.jpg
+index:
+  avatar:
+    # 是否显示头像
+    enable: true
+    # 头像路径
+    path: /images/avatar.jpg
+  introduction:
+    title: "Hello, I'm GIN-18"
+    # markdown语法
+    # 一个段落需要两次换行
+    content: '
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    '
 
 footer:
   copyright:

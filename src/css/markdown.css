@@ -8,7 +8,7 @@
   @apply text-text leading-normal break-words;
 }
 
-.markdown > * + * {
+.markdown > * {
   @apply mt-0 mb-4;
 }
 
