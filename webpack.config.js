@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     common: path.resolve(__dirname, 'src', 'js', 'common.js'),
     mode: path.resolve(__dirname, 'src', 'js', 'mode.js'),
+    index: path.resolve(__dirname, 'src', 'js', 'index.js'),
   },
   output: {
     clean: true,

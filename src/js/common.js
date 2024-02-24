@@ -7,7 +7,6 @@ import '../images/avatar.jpg';
 
 const $ = require('jquery');
 const hljs = require('highlight.js');
-const markdownit = require('markdown-it')
 
 // 高亮文件代码块
 hljs.highlightAll();
@@ -34,12 +33,6 @@ $('#search-btn').on('click', () => {
   $('#search-box').removeClass('hidden').addClass('flex');
   searchPosts()
 })
-
-// 渲染首页的content
-const content = $('#content')
-const md = markdownit()
-const result = md.render(content.data().content)
-content.html(result)
 
 function searchPosts() {
   $.ajax({
