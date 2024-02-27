@@ -3,7 +3,6 @@
     <% yearArray.push(date(post.date, 'YYYY' )) %>
       <% }) %>
         <% yearArray=[...new Set(yearArray)] %>
-
           <!-- 年份归档 -->
           <div class="md:w-3/5">
             <% for(let year of yearArray) { %>
@@ -12,7 +11,7 @@
                   <%= year %>
                 </h2>
                 <ul class="flex flex-col gap-8">
-                  <% page.posts.each((post, index)=> { %>
+                  <% page.posts.each((post, index) => { %>
                     <%if(date(post.date, 'YYYY' )===year) { %>
                       <% index=0 %>
                         <li>
@@ -21,7 +20,7 @@
                               <%= post.title %>
                             </div>
                             <div class="text-sm text-overlay1">
-                              <%= date(post.date, 'MM/DD' )%>
+                              <%- remapDate(date(post.date)) %>
                             </div>
                           </a>
                         </li>

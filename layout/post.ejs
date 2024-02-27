@@ -1,11 +1,13 @@
-<article class="markdown md:w-2/5">
+<article class="markdown md:w-3/5">
   <div>
     <h1>
       <%= page.title %>
     </h1>
   </div>
   <div class="my-2 text-overlay1 text-sm">
-    <span><%- date(page.date, "MM DD, YYYY" ) %></span>
+    <%- remapDate(date(page.date)) %>
+    <span>,</span>
+    <span><%- date(page.date, "YYYY" ) %></span>
   </div>
   <%- toc(page.content, {list_number: false}) %>
     <div>
