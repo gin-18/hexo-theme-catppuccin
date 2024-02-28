@@ -24,7 +24,7 @@ index:
     # 头像路径
     path: /images/avatar.jpg
   introduction:
-    title: "Hello, I'm GIN"
+    title: "Hello, I'm author"
     # markdown语法
     # 一个段落需要两次换行
     content: '
