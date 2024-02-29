@@ -88,6 +88,10 @@
   @apply text-text pl-4 list-decimal;
 }
 
+.markdown p {
+  @apply leading-loose
+}
+
 .markdown kbd {
   @apply text-xs inline-block rounded border px-1 py-05 align-middle font-normal font-mono shadow;
 }
