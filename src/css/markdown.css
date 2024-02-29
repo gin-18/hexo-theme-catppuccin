@@ -114,9 +114,11 @@
 }
 
 .toc {
-  @apply !pl-0 list-inside;
+  @apply !pl-0
 }
-
+.toc, .toc-child {
+  @apply !list-none;
+}
 .toc ::marker{
   @apply text-blue
 }
