@@ -116,3 +116,7 @@
 .toc ::marker{
   @apply text-blue
 }
+
+.markdown img {
+  @apply my-6;
+}
