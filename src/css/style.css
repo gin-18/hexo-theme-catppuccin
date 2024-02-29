@@ -13,7 +13,7 @@
 }
 
 html {
-  @apply h-full
+  @apply h-full scrollbar scrollbar-w-2 scrollbar-thumb-rounded-md scrollbar-thumb-surface2;
 }
 
 h1,h2,h3,h4,h5,h6,header,main,footer,div,span,hr,ul,li {
@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6,header,main,footer,div,span,hr,ul,li {
 }
 
 a {
-  @apply transition duration-200 ease-in 
+  @apply transition duration-200 ease-in
 }
 
 .rainbow-slashes {

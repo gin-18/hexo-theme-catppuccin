@@ -77,7 +77,7 @@
 }
 
 .markdown pre code {
-  @apply block bg-transparent p-0 overflow-auto rounded-none text-subtext0;
+  @apply block bg-transparent p-0 overflow-auto rounded-none text-subtext0 scrollbar scrollbar-h-2 scrollbar-thumb-surface0;
 }
 
 .markdown ul {

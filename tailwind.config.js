@@ -26,6 +26,9 @@ module.exports = {
     addDynamicIconSelectors(),
     require("@catppuccin/tailwindcss")({
       defaultFlavour: "latte",
-    })
+    }),
+    require('tailwind-scrollbar')({
+      nocompatible: true,
+    }),
   ],
 }
