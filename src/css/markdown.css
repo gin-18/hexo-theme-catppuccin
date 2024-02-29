@@ -113,6 +113,10 @@
   @apply bg-mantle !important;
 }
 
+.toc {
+  @apply !pl-0 list-inside;
+}
+
 .toc ::marker{
   @apply text-blue
 }
