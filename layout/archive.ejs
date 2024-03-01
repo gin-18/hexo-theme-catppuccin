@@ -6,11 +6,11 @@
           <!-- 年份归档 -->
           <div class="w-[65ch]">
             <% for(let year of yearArray) { %>
-              <section class="relative <%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %>">
-                <h2 class="mb-2 text-surface0 text-9xl font-['DubtronicInline'] opacity-25">
+              <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %> md:relative">
+                <h2 class="mb-2 text-3xl font-['DubtronicInline'] md:text-surface0 md:text-9xl md:opacity-25">
                   <%= year %>
                 </h2>
-                <ul class="absolute top-16 left-8 flex flex-col gap-4">
+                <ul class="flex flex-col gap-4 md:absolute md:top-16 md:left-8">
                   <% page.posts.each((post, index) => { %>
                     <%if(date(post.date, 'YYYY' )===year) { %>
                       <% index=0 %>

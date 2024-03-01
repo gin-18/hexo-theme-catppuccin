@@ -1,4 +1,4 @@
-<article class="prose articleLink">
+<article class="prose">
   <div>
     <h1>
       <%= page.title %>
@@ -10,7 +10,7 @@
     <span><%- date(page.date, "YYYY" ) %></span>
   </div>
   <%- toc(page.content, {list_number: false}) %>
-  <div>
+  <div class="articleLink">
     <%- page.content %>
   </div>
 </article>
