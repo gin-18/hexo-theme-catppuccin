@@ -6,22 +6,22 @@
           <!-- 年份归档 -->
           <div class="w-[65ch]">
             <% for(let year of yearArray) { %>
-              <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %>">
-                <h2 class="mb-2 text-3xl font-['DubtronicInline']">
+              <section class="relative <%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %>">
+                <h2 class="mb-2 text-surface0 text-9xl font-['DubtronicInline'] opacity-25">
                   <%= year %>
                 </h2>
-                <ul class="flex flex-col gap-8">
+                <ul class="absolute top-16 left-8 flex flex-col gap-4">
                   <% page.posts.each((post, index) => { %>
                     <%if(date(post.date, 'YYYY' )===year) { %>
                       <% index=0 %>
                         <li>
-                          <a href="<%- url_for(post.path) %>">
-                            <div class="mb-2 text-lg">
+                          <a class="group" href="<%- url_for(post.path) %>">
+                            <span class="text-subtext0 text-lg transition duration-150 ease-in group-hover:text-text">
                               <%= post.title %>
-                            </div>
-                            <div class="text-sm text-overlay1">
+                            </span>
+                            <span class="ml-2 text-sm text-overlay1 transition duration-150 ease-in group-hover:text-subtext0">
                               <%- remapDate(date(post.date)) %>
-                            </div>
+                            </span>
                           </a>
                         </li>
                         <% index++ %>
