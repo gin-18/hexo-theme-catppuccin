@@ -12,8 +12,12 @@
   src: url("../fonts/Dubtronic-Solid.woff2") format("woff2");
 }
 
+* {
+  @apply scrollbar scrollbar-w-2 scrollbar-h-2 scrollbar-thumb-rounded-md scrollbar-thumb-surface0
+}
+
 html {
-  @apply h-full scrollbar scrollbar-w-2 scrollbar-thumb-rounded-md scrollbar-thumb-surface2;
+  @apply h-full
 }
 
 h1,h2,h3,h4,h5,h6,header,main,footer,div,span,hr,ul,li {
@@ -22,6 +26,22 @@ h1,h2,h3,h4,h5,h6,header,main,footer,div,span,hr,ul,li {
 
 a {
   @apply transition duration-200 ease-in
+}
+
+code.hljs {
+  @apply !bg-transparent
+}
+
+.toc > .toc-item {
+  @apply !pl-0
+}
+
+.toc .toc-item::marker {
+  @apply !text-blue
+}
+
+.articleLink {
+  @apply prose-a:no-underline hover:prose-a:underline underline-offset-4
 }
 
 .rainbow-slashes {

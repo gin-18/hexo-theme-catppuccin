@@ -17,26 +17,11 @@ navbar:
 dark_mode:
   palette: mocha
 
-index:
-  avatar:
-    # 是否显示头像
-    enable: true
-    # 头像路径
-    path: /images/avatar.jpg
-  introduction:
-    title: "Hello, I'm author"
-    # markdown语法
-    # 一个段落需要两次换行
-    content: '
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    '
+avatar:
+  # 是否显示头像
+  enable: true
+  # 头像路径
+  path: /images/avatar.jpg
 
 footer:
   copyright:

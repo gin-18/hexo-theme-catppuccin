@@ -4,7 +4,7 @@
       <% }) %>
         <% yearArray=[...new Set(yearArray)] %>
           <!-- 年份归档 -->
-          <div class="md:w-3/5">
+          <div class="w-[65ch]">
             <% for(let year of yearArray) { %>
               <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %>">
                 <h2 class="mb-2 text-3xl font-['DubtronicInline']">

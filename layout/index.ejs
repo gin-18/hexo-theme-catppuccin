@@ -1,10 +1,12 @@
-<div class="flex flex-col justify-start md:w-3/5">
-  <% if(theme.index.avatar.enable) { %>
-    <img class="w-20 border-2 border-text rounded-full" src="<%= theme.index.avatar.path %>" alt="avatar">
+<% page.layout = 'index' %>
+<div class="flex flex-col justify-start">
+  <% if(theme.avatar.enable) { %>
+    <img class="w-20 mb-6 border-2 border-text rounded-full" src="<%= theme.avatar.path %>" alt="avatar">
   <% } %>
-    <h2 class="my-3 text-lg font-semibold">
-      <%= theme.index.introduction.title %>
-    </h2>
-    <div id="content" class="markdown" data-content="<%= theme.index.introduction.content %>"></div>
+  <% site.pages.each((page) => { %>
+    <% if(page.title === 'index') { %>
+      <article id="content" class="prose articleLink" data-content="<%= page.content %>"></article>
+    <% }%>
+  <% }) %>
 </div>
 <%- js('js/index.js') %>

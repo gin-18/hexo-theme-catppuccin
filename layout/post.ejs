@@ -1,4 +1,4 @@
-<article class="markdown md:w-3/5">
+<article class="prose articleLink">
   <div>
     <h1>
       <%= page.title %>
@@ -10,7 +10,7 @@
     <span><%- date(page.date, "YYYY" ) %></span>
   </div>
   <%- toc(page.content, {list_number: false}) %>
-    <div>
-      <%- page.content %>
-    </div>
+  <div>
+    <%- page.content %>
+  </div>
 </article>

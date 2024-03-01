@@ -10,6 +10,16 @@ cd themes/catppuccin
 npm run build
 ```
 
+## 首页内容
+
+在主题目录中的 `_config.yml` 的 `avatar` 字段下修改头像相关内容。
+
+页面的内容需要写在 `index.md` 中。
+
+```sh
+hexo new page index
+```
+
 ## 修改全局配置可以使用代码高亮
 
 在博客目录中的 `_config.yml` 将 `highlight.enable` 设置为 `false`。
