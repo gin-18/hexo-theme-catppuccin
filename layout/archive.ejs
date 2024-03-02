@@ -4,9 +4,9 @@
       <% }) %>
         <% yearArray=[...new Set(yearArray)] %>
           <!-- 年份归档 -->
-          <div class="w-[65ch]">
+          <div>
             <% for(let year of yearArray) { %>
-              <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %> md:relative">
+              <section class="<%= (sectionIndex === yearArray.length - 1)? '' : 'mb-16' %> max-w-[65ch] md:w-[65ch] md:relative">
                 <h2 class="mb-2 text-3xl font-['DubtronicInline'] md:text-surface0 md:text-9xl md:opacity-25">
                   <%= year %>
                 </h2>

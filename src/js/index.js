@@ -1,4 +1,6 @@
 const $ = require('jquery')
 
-const content = $('#content')
-content.html(content.data().content)
+try {
+  const content = $('#content')
+  content.html(content.data().content)
+} catch (error) { }

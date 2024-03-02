@@ -2,8 +2,6 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  watch: true,
-  mode: 'development',
   entry: {
     common: path.resolve(__dirname, 'src', 'js', 'common.js'),
     mode: path.resolve(__dirname, 'src', 'js', 'mode.js'),
@@ -11,13 +9,13 @@ module.exports = {
   },
   output: {
     clean: true,
-    filename: 'js/[name].js',
+    filename: 'js/[name].[contenthash].js',
     path: path.resolve(__dirname, 'source')
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -27,7 +25,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -35,14 +33,14 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff|woff2)$/,
+        test: /\.(woff|woff2)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'fonts/[hash][ext][query]'
         }
       },
       {
-        test: /\.(png|svg|jpg|gif|webp|ico)$/,
+        test: /\.(png|svg|jpg|gif|webp|ico)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext][query]'
@@ -52,7 +50,20 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
+      filename: 'css/[name].[contenthash].css'
     }),
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 0,
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
+  },
 }

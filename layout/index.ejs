@@ -1,5 +1,5 @@
 <% page.layout = 'index' %>
-<div class="flex flex-col justify-start">
+<div class="flex flex-col justify-start md:w-[65ch]">
   <% if(theme.avatar.enable) { %>
     <img class="w-20 mb-6 border-2 border-text rounded-full" src="<%= theme.avatar.path %>" alt="avatar">
   <% } %>
@@ -9,4 +9,3 @@
     <% }%>
   <% }) %>
 </div>
-<%- js('js/index.js') %>
