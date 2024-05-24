@@ -5,12 +5,11 @@
     </h1>
   </div>
   <div class="my-2 text-overlay1 text-sm">
-    <%- remapDate(date(page.date)) %>
-    <span>,</span>
+    <span><%- remapDate(date(page.date)) %>,</span>
     <span><%- date(page.date, "YYYY" ) %></span>
   </div>
   <%- toc(page.content, {list_number: false}) %>
-  <div class="articleLink">
-    <%- page.content %>
-  </div>
+    <div class="articleLink">
+      <%- page.content %>
+    </div>
 </article>
